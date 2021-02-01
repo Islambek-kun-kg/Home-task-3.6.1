@@ -28,26 +28,12 @@ public class FragmentAddToList extends Fragment {
     public View onCreateView(LayoutInflater f, ViewGroup c, Bundle s) {
         v = f.inflate(R.layout.fragment_add_to_list, c, false);
         btnAdd = v.findViewById(R.id.btnAdd);
-        btnHide = v.findViewById(R.id.btnHide);
-        btnShow = v.findViewById(R.id.btnShow);
         edtTxt = v.findViewById(R.id.edtTxt);
         btnAdd.setOnClickListener(v1 -> {
             String txt = edtTxt.getText().toString();
             MainActivity mainActivity = (MainActivity) getActivity();
             if (mainActivity != null) {
                 mainActivity.AddToList(txt);
-            }
-        });
-        btnHide.setOnClickListener(v1 -> {
-            MainActivity mainActivity = (MainActivity) getActivity();
-            if (mainActivity != null) {
-                mainActivity.Hide();
-            }
-        });
-        btnShow.setOnClickListener(v1 -> {
-            MainActivity mainActivity = (MainActivity) getActivity();
-            if (mainActivity != null) {
-                mainActivity.Show();
             }
         });
         return v;
