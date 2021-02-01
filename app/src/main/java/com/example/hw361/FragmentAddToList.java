@@ -13,7 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class FragmentAddToList extends Fragment {
-    private Button btnAdd, btnHide, btnShow;
+    private Button btnAdd;
     private IFragment iFragment;
     private EditText edtTxt;
     private View v;
