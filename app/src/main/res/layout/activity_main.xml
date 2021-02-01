@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -18,6 +17,13 @@
         android:id="@+id/fragmentForList"
         android:name="com.example.hw361.FragmentForList"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="550dp"
         tools:layout="@layout/fragment_for_list" />
+
+    <fragment
+        android:id="@+id/fragmentForHideAndShow"
+        android:name="com.example.hw361.FragmentForHideAndShow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_for_hide_and_show" />
 </LinearLayout>
